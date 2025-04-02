@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
 import './App.css';
 
 // Define the possible states for active text boxes
@@ -8,8 +7,6 @@ type ActiveBox = "about" | "experience" | "projects" | null;
 const App: React.FC = () => {
   // State to track which text box is active
   const [activeBox, setActiveBox] = useState<ActiveBox>(null);
-  const [visitCount, setVisitCount] = useState<number | null>(null);
-  const supabase = createClient("https://zycuwjnzzgypvggqijlm.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5Y3V3am56emd5cHZnZ3FpamxtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM1ODY0MjgsImV4cCI6MjA1OTE2MjQyOH0.skMufbXfGdGsLWfXw6WWfbdZOe-xvbV-HfzivRax_4I")
 
   // Function to handle button clicks and toggle the respective text box
   const handleClick = (box: ActiveBox) => {
@@ -19,30 +16,6 @@ const App: React.FC = () => {
   useEffect (() => {
     document.title = "Leith Rabah | Portfolio";
   }, []); // Set the document title when the component mounts
-
-  useEffect(() => {
-    const getAndIncrement = async () => {
-      const { data, error } = await supabase
-        .from("visit_counter")
-        .select("count")
-        .eq("id", 1)
-        .single();
-
-      if (error) return console.error("Error fetching visit count:", error);
-
-      const currentCount = data.count;
-      setVisitCount(currentCount);
-
-      if (!sessionStorage.getItem("visited")) {
-        await supabase
-          .from("visit_counter")
-          .update({ count: currentCount + 1 })
-          .eq("id", 1);
-        sessionStorage.setItem("visited", "true");
-      }
-    };
-    getAndIncrement();
-  }, [supabase]);
   
   return (
     <div className="container">
@@ -100,9 +73,6 @@ const App: React.FC = () => {
           </div>
         )}
       </div>
-      <footer>
-        <p>This site has been visited {visitCount ?? 0} times.</p>
-      </footer>
     </div>
   );
 };
