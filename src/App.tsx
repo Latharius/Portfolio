@@ -7,9 +7,6 @@ type ActiveBox = "about" | "experience" | "projects" | null;
 const App: React.FC = () => {
   // State to track which text box is active
   const [activeBox, setActiveBox] = useState<ActiveBox>(null);
-  const [visitCount, setVisitCount] = useState<number | null>(null);
-
-
 
   // Function to handle button clicks and toggle the respective text box
   const handleClick = (box: ActiveBox) => {
@@ -19,18 +16,7 @@ const App: React.FC = () => {
   useEffect (() => {
     document.title = "Leith Rabah | Portfolio";
   }, []); // Set the document title when the component mounts
-
-  useEffect(() => {
-    fetch("https://api.countapi.xyz/hit/leithrabahsportfolio/visits").then(res => res.json()).then(data => {
-      console.log("Fetched from API:", data);
-      setVisitCount(data.value);
-    }
-    ).catch(err => {
-      console.error("Error fetching visit count:", err);
-    }
-    );
-  }, []);
-
+  
   return (
     <div className="container">
       <h1 className="header">
@@ -87,11 +73,6 @@ const App: React.FC = () => {
           </div>
         )}
       </div>
-      <footer className="footer">
-      <p className="visit-counter">
-        This portfolio has been visited {visitCount ?? 0} times!
-      </p>
-      </footer>
     </div>
   );
 };
