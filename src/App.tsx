@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 
 // Define the possible states for active text boxes
@@ -7,6 +7,10 @@ type ActiveBox = "about" | "experience" | "projects" | null;
 const App: React.FC = () => {
   // State to track which text box is active
   const [activeBox, setActiveBox] = useState<ActiveBox>(null);
+
+  useEffect (() => {
+    document.title = "Leith Rabah | Portfolio";
+  }, []); // Set the document title when the component mounts
 
   // Function to handle button clicks and toggle the respective text box
   const handleClick = (box: ActiveBox) => {
