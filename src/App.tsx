@@ -31,7 +31,7 @@ const App: React.FC = () => {
           <div className="text_box">
             <p>I am a Software Engineer with a Bachelor's degree in Computer Engineering from the University of Central Florida. I am passionate about developing 
               innovative software solutions that will have a meaningful impact on people's lives. With a strong foundation in software development, I am dedicated 
-              to building efficient applications that drive towards positive change.
+              to building applications that drive towards positive change.
             </p>
             <p>
               You can reach me on <a href="https://www.linkedin.com/in/leith-rabah-29a931186/" target="_blank" rel="noopener noreferrer">Linkedin</a>,
