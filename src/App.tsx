@@ -15,14 +15,16 @@ const App: React.FC = () => {
 
   return (
     <div className="container">
-      <h1 className="header">Hello There! I'm Leith Rabah!</h1>
+      <h1 className="header">
+        <span className="typewriter">Hello There! I'm Leith Rabah!</span>
+      </h1>
 
       <div className="buttons_card">
-        <button className="button" onClick={() => handleClick("about")}>About Me</button>
-        <button className="button" onClick={() => handleClick("experience")}>My Experience</button>
-        <button className="button" onClick={() => handleClick("projects")}>Personal Projects</button>
+        <button className="button button_animate" onClick={() => handleClick("about")}>About Me</button>
+        <button className="button button_animate" onClick={() => handleClick("experience")}>My Experience</button>
+        <button className="button button_animate" onClick={() => handleClick("projects")}>Personal Projects</button>
         <a href="/Resume2025.pdf" target="_blank" rel="noopener noreferrer" download>
-          <button className="button">Download Resume</button>
+          <button className="button button_animate">Download Resume</button>
         </a>
       </div>
 
