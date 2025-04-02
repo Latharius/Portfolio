@@ -22,6 +22,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     fetch("https://api.countapi.xyz/hit/leithrabahsportfolio/visits").then(res => res.json()).then(data => {
+      console.log("Fetched from API:", data);
       setVisitCount(data.value);
     }
     ).catch(err => {
@@ -87,11 +88,9 @@ const App: React.FC = () => {
         )}
       </div>
       <footer className="footer">
-        {visitCount !== null && (
-          <p className="visit_counter">
-            This portfolio has been visited {visitCount} times!
-          </p>
-        )}
+      <p className="visit-counter">
+        This portfolio has been visited {visitCount ?? 0} times!
+      </p>
       </footer>
     </div>
   );
