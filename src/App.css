@@ -128,3 +128,20 @@ a {
   animation: fadeSlideDown 1.5s ease-out forwards;
   animation-delay: 3.2s; /* Delay to allow for typing animation */
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
+
+.visit_counter {
+  margin: 0;
+  color: turquoise;
+}
