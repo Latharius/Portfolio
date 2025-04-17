@@ -91,7 +91,7 @@ a {
   border-right: 0.15em solid white; /* Cursor effect */
   white-space: nowrap; /* Prevents text wrapping */
   width: 0; /* Start with no width */
-  animation: typing 3s steps(25, end) forwards, blink-caret 1s step-end infinite;
+  animation: typing 2s steps(25, end) forwards, blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
