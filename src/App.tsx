@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <button className="button button_animate" onClick={() => handleClick("about")}>About Me</button>
         <button className="button button_animate" onClick={() => handleClick("experience")}>My Experience</button>
         <button className="button button_animate" onClick={() => handleClick("projects")}>Personal Projects</button>
-        <a href="/Resume2025.pdf" target="_blank" rel="noopener noreferrer" download>
+        <a href="/LeithsResume2.docx" target="_blank" rel="noopener noreferrer" download>
           <button className="button button_animate">Download Resume</button>
         </a>
       </div>
@@ -37,7 +37,8 @@ const App: React.FC = () => {
           <div className="text_box">
             <p>I am a Software Engineer with a Bachelor's degree in Computer Engineering from the University of Central Florida. I am passionate about developing 
               innovative software solutions that will have a meaningful impact on people's lives. With a strong foundation in software development, I am dedicated 
-              to building applications that drive towards positive change.
+              to building applications that drive towards positive change. With the motto of "Efficiency first, style second", I strive to create clean, efficient, 
+              and maintainable code that meets the needs of users and stakeholders alike before worrying about the design and style of the application.
             </p>
             <p>
               You can reach me on <a href="https://www.linkedin.com/in/leith-rabah-29a931186/" target="_blank" rel="noopener noreferrer">Linkedin</a>,
@@ -52,7 +53,9 @@ const App: React.FC = () => {
           <div className="text_box">
             <p><strong>LocusUSA:</strong> I was a software engineer for nearly 2 years where my focus was frontend programming.
             I designed, programmed, tested, and optimized web apps using <u>Figma</u>, <u>Flutter</u>, <u>.NET MAUI</u>, and <u>Python</u>.
-            I also programmed, tested, and debugged circuit boards to ensure they were ready for distribution.</p>
+            I also programmed, tested, and debugged circuit boards to ensure they were ready for distribution. My main project was the design and development of  digital 
+            spectrum analyzer which read data from an external source and displayed it on a customizable GUI. The project resulted in a 50% increase in response time 
+            and a more consistent connection method.</p>
           </div>
         )}
 
