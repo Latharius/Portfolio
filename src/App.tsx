@@ -55,7 +55,7 @@ const App: React.FC = () => {
             I designed, programmed, tested, and optimized web apps using <u>Figma</u>, <u>Flutter</u>, <u>.NET MAUI</u>, and <u>Python</u>.
             I also programmed, tested, and debugged circuit boards to ensure they were ready for distribution. My main project was the design and development of  digital 
             spectrum analyzer which read data from an external source and displayed it on a customizable GUI. The project resulted in a 50% increase in response time 
-            and a more consistent connection method.</p>
+            and a more consistent and reliable connection method.</p>
           </div>
         )}
 
