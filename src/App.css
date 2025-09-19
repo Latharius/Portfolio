@@ -65,6 +65,9 @@ button {
   opacity: 1;
   padding: 10px;
   flex-direction: column-reverse;
+  /* Ensure the open text box is on top and can receive clicks */
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .text_box {
