@@ -70,9 +70,9 @@ const App: React.FC = () => {
             and brightness levels of RGB lights by reading the sound waves going into the microphone and controlling the lights to display the correct colors and 
             brightness levels according to the musical notes and volume inputted into the microphone.
             </p>
-            <p><strong>REM Cycle Alarm (In Progress):</strong> Creating an application which syncs with the user's smartwatch to detect when the user
-            falls asleep and sets the alarm time to the end of the last REM cycle before their desired time to wake up. Allowing the user to 
-            wake up more refreshed and less groggy.</p>
+            <p><strong>Secret Project (Mobile App):</strong> Creating an application which integrates real-time geolocation tracking with interactive maps, dynamic scheduling and 
+            instant messaging for efficient planning and communication between users. Built with the hopes of bringing communities 
+            together and saving everyone precious time.</p>
           </div>
         )}
       </div>
