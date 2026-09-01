@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <button className="button button_animate" onClick={() => handleClick("about")}>About Me</button>
         <button className="button button_animate" onClick={() => handleClick("experience")}>My Experience</button>
         <button className="button button_animate" onClick={() => handleClick("projects")}>Personal Projects</button>
-        <a href="/LeithsResume2.docx" target="_blank" rel="noopener noreferrer" download>
+        <a href="/LeithResume.docx" target="_blank" rel="noopener noreferrer" download>
           <button className="button button_animate">Download Resume</button>
         </a>
       </div>
@@ -51,11 +51,16 @@ const App: React.FC = () => {
 
         {activeBox === "experience" && (
           <div className="text_box">
-            <p><strong>LocusUSA:</strong> I was a software engineer for nearly 2 years where my focus was frontend programming.
-            I designed, programmed, tested, and optimized web apps using <u>Figma</u>, <u>Flutter</u>, <u>.NET MAUI</u>, and <u>Python</u>.
-            I also programmed, tested, and debugged circuit boards to ensure they were ready for distribution. My main project was the design and development of  digital 
-            spectrum analyzer which read data from an external source and displayed it on a customizable GUI. The project resulted in a 50% increase in response time 
-            and a more consistent and reliable connection method.</p>
+            <p><strong>NASA:</strong> Insourcing transition from Amentum to NASA continuing the same role and responsibilities from 10/2026-Present</p>
+            <p><strong>Amentum:</strong> <u>Software Engineer</u> from 01/2026-09/2026 specializing in Python development, automated testing, and deployment automation for 
+            mission-critical systems. Experienced in developing and troubleshooting software, building BDD-based test automation with Behave/Cucumber, 
+            and automating deployments and configurations using Ansible and AWX. Skilled in Red Hat Linux, Docker, Flask, Git, root-cause analysis, and 
+            software integration, with a focus on system reliability, maintainability, and operational readiness.</p>
+            <p><strong>LocusUSA:</strong> <u>Software Engineer</u> from 09/2023-03/2025 specializing in frontend development, software testing, 
+            and system optimization. Designed, developed, tested, and optimized cross-platform applications using Flutter, .NET MAUI, Python, and Figma. 
+            Experienced in programming, testing, and debugging circuit boards to ensure reliability and production readiness. Led the design and development 
+            of a <u>digital spectrum analyzer</u> that processed external data and displayed results through a customizable GUI, achieving a <u>50% improvement</u> in 
+            response time and a more consistent, reliable connection method.</p>
           </div>
         )}
 
