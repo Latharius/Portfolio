@@ -35,11 +35,19 @@ const App: React.FC = () => {
       <div className={`text_box_wrapper ${activeBox ? "open" : "closed"}`}>
         {activeBox === "about" && (
           <div className="text_box">
-            <p>I am a Software Engineer with a Bachelor's degree in Computer Engineering from the University of Central Florida. I am passionate about developing 
-              innovative software solutions that will have a meaningful impact on people's lives. With a strong foundation in software development, I am dedicated 
-              to building applications that drive towards positive change. With the motto of "Efficiency first, style second", I strive to create clean, efficient, 
-              and maintainable code that meets the needs of users and stakeholders alike before worrying about the design and style of the application.
-            </p>
+            <p>I'm a Software Engineer with hands-on experience building and maintaining mission-critical systems, currently supporting Launch Control 
+            Center operations at NASA on the Kennedy Space Center campus. My work centers on automated testing (Python, Behave/Cucumber, BDD), 
+            infrastructure automation (Ansible, AWX), and root-cause analysis for high-stakes aerospace environments where reliability and precision 
+            aren't optional.</p>
+            <p>Before that, I spent nearly two years at LocusUSA building cross-platform applications with React and Flutter, designing REST APIs, and 
+              engineering a real-time digital spectrum analyzer that boosted system performance by roughly 50%. That role sharpened my ability to move 
+              fluidly between front-end product work, backend integration, and embedded systems, often bridging the gap between hardware constraints 
+              and user-facing software.</p>
+            <p>I hold a B.S. in Computer Engineering from the University of Central Florida, and I bring a full-stack mindset shaped by both 
+              consumer-facing product development and rigorous, systems-level engineering. I'm comfortable across the Python/JavaScript/TypeScript 
+              ecosystem, DevOps tooling (Git, Docker, Ansible, Linux), and databases (MySQL, MongoDB), and I thrive in environments where I need to 
+              diagnose problems quickly, automate repetitive work, and collaborate closely with cross-functional teams.</p>
+              <p>I'm drawn to roles where software reliability actually matters. Where the code I write supports real operations, real people, or real missions.</p>
             <p>
               You can reach me on <a href="https://www.linkedin.com/in/leith-rabah-29a931186/" target="_blank" rel="noopener noreferrer">Linkedin</a>,
               &nbsp;<a href="https://github.com/Latharius" target="_blank" rel="noopener noreferrer">Github</a>, or via 
