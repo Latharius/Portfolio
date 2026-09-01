@@ -74,18 +74,16 @@ const App: React.FC = () => {
 
         {activeBox === "projects" && (
           <div className="text_box">
-            <p><strong><a href="https://github.com/Samdosi/OnlyHands-" target="_blank" rel="noopener noreferrer">OnlyHands</a>:</strong> A Tinder-type application that was made 
-            to match martial artists with other martial artists so they could more easily find training and sparring partners. Personally worked on the database 
-            using <u>MongoDB</u> and on the frontend using <u>React.js</u></p>
+            <p><strong><a href="https://github.com/Samdosi/OnlyHands-" target="_blank" rel="noopener noreferrer">OnlyHands</a>:</strong> A Tinder-style matching application 
+            designed to connect martial artists with training and sparring partners. I focused on the database layer, using <u>MongoDB</u> to structure and manage user data, 
+            and contributed to the frontend using <u>React.js</u></p>
             <p><strong><a href="https://docs.google.com/document/d/1lRhKnxf_nXBFLPZNh7UkucsBuqzN2b4t/edit" target="_blank" rel="noopener noreferrer">Frequency-Based 
-            Instrumental Lights</a>:</strong> My senior Project. Completed with a team of two computer engineers and two electrical engineers, including myself. 
-            Personally worked on the software application along with my partner. It was a <u>Python application</u> that allowed you to control the color themes, intervals, 
-            and brightness levels of RGB lights by reading the sound waves going into the microphone and controlling the lights to display the correct colors and 
-            brightness levels according to the musical notes and volume inputted into the microphone.
-            </p>
-            <p><strong>Secret Project (Mobile App):</strong> Creating an application which integrates real-time geolocation tracking with interactive maps, dynamic scheduling and 
-            instant messaging for efficient planning and communication between users. Built with the hopes of bringing communities 
-            together and saving everyone precious time.</p>
+            Instrumental Lights</a>:</strong> My senior capstone project, completed with a team of two computer engineers and two electrical engineers, including myself. 
+            I worked alongside my partner to build the software application: a <u>Python program</u> that that analyzed audio input in real time through a microphone and 
+            translated musical notes and volume into corresponding RGB light colors, intervals, and brightness levels.</p>
+            <p><strong>Secret Project (Mobile App, in development):</strong> Creating an application integrating real-time geolocation tracking, interactive maps, 
+            dynamic scheduling, and instant messaging to streamline planning and communication between users. Built with the goal of bringing communities together and 
+            saving people time.</p>
           </div>
         )}
       </div>
