@@ -1,13 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leith Rabah — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain-overlay"></div>
+
+<nav class="nav">
+  <div class="nav-id"><span class="dot"></span>LEITH RABAH</div>
+  <div class="nav-links">
+    <a href="#experience"><span>01</span>Experience</a>
+    <a href="#projects"><span>02</span>Projects</a>
+    <a href="#skills"><span>03</span>Skills</a>
+    <a href="#education"><span>04</span>Education</a>
+    <a href="#contact"><span>05</span>Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#experience"><span>01</span>Experience</a>
+  <a href="#projects"><span>02</span>Projects</a>
+  <a href="#skills"><span>03</span>Skills</a>
+  <a href="#education"><span>04</span>Education</a>
+  <a href="#contact"><span>05</span>Contact</a>
+</div>
+
+<header class="hero">
+  <canvas id="spectrum"></canvas>
+  <div class="hero-scanline"></div>
+  <div class="hero-fade"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow"><span class="bracket">//</span> Software Engineer — Orlando, FL</p>
+    <h1>Leith Rabah</h1>
+    <p class="hero-sub">
+      I'm a software engineer currently building and testing the systems behind Launch Control Center operations
+      at Kennedy Space Center. My background spans <strong>backend automation, test infrastructure, and full-stack
+      development</strong>, including two years building cross-platform applications and real-time hardware tools. 
+      I graduated with a B.S in Computer Engineering at UCF.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+    <div class="hero-readout">
+      <div class="readout-item">
+        <div class="num"><span>~50%</span></div>
+        <div class="label">Perf. gain, spectrum analyzer</div>
+      </div>
+      <div class="readout-item">
+        <div class="num">2</div>
+        <div class="label">Engineering teams shipped for</div>
+      </div>
+      <div class="readout-item">
+        <div class="num">UCF</div>
+        <div class="label">B.S. Computer Engineering</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="experience">
+  <div class="section-head">
+    <h2>Experience</h2>
+    <span class="section-tag">2023 — present</span>
+  </div>
+
+  <div class="timeline">
+
+    <div class="role current">
+      <div class="role-meta">
+        <span class="role-title">Software Engineer</span>
+        <span class="role-current-tag">current</span>
+      </div>
+      <div class="role-org">NASA — Kennedy Space Center, FL</div>
+      <div class="role-dates">January 2026 — Present</div>
+      <ul class="role-points">
+        <li>Build and maintain <strong>Python-based automated test suites</strong> with Behave/Cucumber and BDD methodology, writing new scenarios and debugging failures to raise regression coverage on mission-critical systems.</li>
+        <li>Develop and troubleshoot software for <strong>Launch Control Center (LCC)</strong> operational environments, resolving defects that affect ground-system maintainability.</li>
+        <li>Automate deployment and configuration across LCC server environments with <strong>AWX and Ansible</strong>, turning releases into repeatable, low-risk operations.</li>
+        <li>Run root-cause analysis on software and system failures, documenting findings so fixes and knowledge transfer happen faster across the team.</li>
+        <li>Review and merge code with fellow engineers through Git-based workflows, resolving integration conflicts while keeping the codebase production-quality.</li>
+      </ul>
+      <div class="role-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Ansible</span>
+        <span class="tech-pill">AWX</span>
+        <span class="tech-pill">Docker</span>
+        <span class="tech-pill">Red Hat Linux</span>
+        <span class="tech-pill">Behave / Cucumber</span>
+        <span class="tech-pill">Git</span>
+        <span class="tech-pill">Flask</span>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <span class="role-title">Software Engineer</span>
+      </div>
+      <div class="role-org">LocusUSA — Melbourne, FL</div>
+      <div class="role-dates">September 2023 — March 2025</div>
+      <ul class="role-points">
+        <li>Built cross-platform applications in <strong>React and Flutter</strong>, establishing a reusable component library that became the foundation for Android and desktop clients.</li>
+        <li>Designed and integrated REST APIs connecting front-end applications to backend services, with room built in for future AI/LLM integrations.</li>
+        <li>Built a <strong>real-time digital spectrum analyzer</strong> for hardware frequency visualization, improving system performance and consistency by roughly 50%.</li>
+        <li>Diagnosed and resolved software and embedded-system defects affecting device reliability, cutting down operational issues in the field.</li>
+        <li>Worked across software, hardware, and product teams to turn technical and customer requirements into production-ready features.</li>
+      </ul>
+      <div class="role-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">Flutter</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">MySQL</span>
+        <span class="tech-pill">MATLAB</span>
+        <span class="tech-pill">REST APIs</span>
+        <span class="tech-pill">Embedded Systems</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head">
+    <h2>Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project">
+      <span class="project-index">P-01</span>
+      <h3>OnlyHands — combat-sport matchmaking</h3>
+      <p>A responsive full-stack matchmaking application built on the MERN stack, with REST APIs and database schemas designed to support scalable user and event tracking.</p>
+      <div class="project-metric">Shipped across 4 sprint cycles</div>
+      <div class="project-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+    </div>
+
+    <div class="project">
+      <span class="project-index">P-02</span>
+      <h3>Instrumental Lights — frequency-based LED display</h3>
+      <p>Led a 4-member team building a hardware-integrated LED display driven by real-time audio signals, with Python-based signal processing translating input into synchronized lighting patterns.</p>
+      <div class="project-metric">120-page system lifecycle report authored</div>
+      <div class="project-tags"><span>Python</span><span>Custom Hardware</span></div>
+    </div>
+
+    <div class="project">
+      <span class="project-index">P-03</span>
+      <h3>NextUp — pickup basketball app</h3>
+      <p>A cross-platform React Native app integrating maps, geolocation, and real-time chat, with a queue-management algorithm handling player sign-ups and game flow.</p>
+      <div class="project-metric">Tested across iOS and Android</div>
+      <div class="project-tags"><span>React Native</span><span>TypeScript</span><span>MySQL</span><span>Maps APIs</span></div>
+    </div>
+
+    <div class="project">
+      <span class="project-index">P-04</span>
+      <h3>Real-time digital spectrum analyzer</h3>
+      <p>A frequency-visualization tool for real-time hardware input, giving engineers a live read on signal behavior instead of a static log dump.</p>
+      <div class="project-metric">~50% improvement in performance &amp; consistency</div>
+      <div class="project-tags"><span>Python</span><span>React.js</span><span>Flutter</span><span>MATLAB</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head">
+    <h2>Technical Skills</h2>
+  </div>
+
+  <div class="panel">
+    <div class="panel-row">
+      <div class="panel-label">Languages</div>
+      <div class="panel-values">
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">C++</span>
+        <span class="skill-chip">C#</span>
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">TypeScript</span>
+        <span class="skill-chip">SQL</span>
+      </div>
+    </div>
+    <div class="panel-row">
+      <div class="panel-label">Frameworks &amp; Libraries</div>
+      <div class="panel-values">
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Flutter</span>
+        <span class="skill-chip">Flask</span>
+        <span class="skill-chip">.NET</span>
+        <span class="skill-chip">Express.js</span>
+        <span class="skill-chip">PyTorch</span>
+      </div>
+    </div>
+    <div class="panel-row">
+      <div class="panel-label">DevOps &amp; Automation</div>
+      <div class="panel-values">
+        <span class="skill-chip">Git</span>
+        <span class="skill-chip">Docker</span>
+        <span class="skill-chip">Ansible</span>
+        <span class="skill-chip">AWX</span>
+        <span class="skill-chip">Linux</span>
+      </div>
+    </div>
+    <div class="panel-row">
+      <div class="panel-label">Testing</div>
+      <div class="panel-values">
+        <span class="skill-chip">Behave / Cucumber</span>
+        <span class="skill-chip">BDD</span>
+        <span class="skill-chip">Automated Testing</span>
+        <span class="skill-chip">Root-Cause Analysis</span>
+      </div>
+    </div>
+    <div class="panel-row">
+      <div class="panel-label">Databases</div>
+      <div class="panel-values">
+        <span class="skill-chip">MySQL</span>
+        <span class="skill-chip">MongoDB</span>
+      </div>
+    </div>
+    <div class="panel-row">
+      <div class="panel-label">Additional</div>
+      <div class="panel-values">
+        <span class="skill-chip">REST APIs</span>
+        <span class="skill-chip">Embedded Systems</span>
+        <span class="skill-chip">MATLAB</span>
+        <span class="skill-chip">Agile Development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-head">
+    <h2>Education</h2>
+  </div>
+  <div class="edu-card">
+    <div>
+      <h3>University of Central Florida</h3>
+      <p>Bachelor of Science in Computer Engineering</p>
+    </div>
+    <div class="edu-dates">January 2019 — May 2023</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <span class="section-tag">// let's talk</span>
+  <h2>Get in <em>touch</em></h2>
+  <div class="contact-links">
+    <a class="btn btn-ghost" href="mailto:Leithr97@gmail.com">Leithr97@gmail.com</a>
+    <a class="btn btn-ghost" href="tel:+14077790615">(407) 779-0615</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/leith-rabah-29a931186/">Linkedin</a>
+  </div>
+</section>
+
+<footer>
+  <span>Leith Rabah</span>
+  <span>Orlando, FL</span>
+</footer>
+<script src="App.js"></script>
+
+
+</body>
 </html>
